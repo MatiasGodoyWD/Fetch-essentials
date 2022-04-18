@@ -1,23 +1,21 @@
-import tw from 'tailwind-styled-components/dist/tailwind';
-import ListadoVistos from './components/ListadoVistos.jsx';
+import tw from "tailwind-styled-components/dist/tailwind";
+import ListadoVistos from "./components/ListadoVistos.jsx";
 
 function App() {
-	return (
-		<>
-			<MainLayout>
-				<Header>
-					<h1 class="text-5xl font-bold text-white font-Poppins text-center">
-						Mis Vistos
-					</h1>
-					<button className="bg-gray-200 px-10 py-1">
-						Agregar +
-					</button>
-					<span className="w-100 bg-gray-100 p-px w-4/5"></span>
-				</Header>
-				<ListadoVistos />
-			</MainLayout>
-		</>
-	);
+  return (
+    <>
+      <MainLayout>
+        <Header>
+          <h1 className="text-5xl font-bold text-white font-Poppins text-center">
+            Mis Vistos
+          </h1>
+          <button className="bg-gray-200 px-10 py-1">Agregar +</button>
+          <span className="w-100 bg-gray-100 p-px w-4/5"></span>
+        </Header>
+        <ListadoVistos />
+      </MainLayout>
+    </>
+  );
 }
 
 const MainLayout = tw.div`
